@@ -1,0 +1,87 @@
+/* Font & dasar halaman */
+body {
+  font-family: 'Poppins', sans-serif;   /* Mengatur jenis huruf seluruh halaman */
+  background-color: #f8fafc;            /* Memberi warna latar belakang halaman */
+  margin: 0;                            /* Menghapus jarak luar default browser */
+  padding: 0;                           /* Menghapus jarak dalam default */
+  line-height: 1.6;                     /* Mengatur tinggi antar baris teks */
+  color: #333;                          /* Warna teks utama */
+}
+
+/* Header (bagian atas) */
+.header {
+  background-color: #dceefb;            /* Warna latar biru muda */
+  text-align: center;                   /* Teks di tengah */
+  padding: 40px 20px;                   /* Jarak dalam atas-bawah dan samping */
+  border-radius: 6px;                   /* Sudut kotak agak melengkung */
+  margin: 20px;                         /* Jarak luar dari tepi halaman */
+}
+.header h1 {
+  color: #2261ae;                       /* Warna teks biru tua */
+  margin-bottom: 10px;                  /* Jarak bawah antar elemen */
+  font-weight: 700;                     /* Ketebalan huruf tebal */
+}
+.header p {
+  font-style: italic;                   /* Membuat tulisan miring */
+  color: #4b5563;                       /* Warna abu-abu tua */
+}
+
+/* Konten utama (bagian isi artikel) */
+.content {
+  background-color: #fff;               /* Warna latar putih */
+  padding: 30px;                        /* Ruang dalam isi kotak */
+  border-radius: 10px;                  /* Sudut agak melengkung */
+  max-width: 800px;                     /* Lebar maksimal agar tidak kepanjangan */
+  margin: 20px auto;                    /* Tengah secara horizontal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan halus di belakang kotak */
+}
+.content h2 {
+  color: #006d5b;                       /* Warna hijau toska untuk judul */
+  font-weight: 600;                     /* Huruf agak tebal */
+  margin-bottom: 10px;                  /* Jarak bawah dari teks */
+}
+.highlight {
+  color: #e74c3c;                       /* Warna merah untuk menonjolkan kata */
+  font-weight: 500;                     /* Huruf sedikit tebal */
+}
+
+/* Kutipan (quote motivasi) */
+.quote {
+  background-color: #e5f0ff;            /* Warna biru lembut */
+  color: #1e3a8a;                       /* Warna teks biru tua */
+  font-style: italic;                   /* Tulisan miring khas kutipan */
+  padding: 15px 25px;                   /* Jarak dalam */
+  border-radius: 8px;                   /* Sudut lembut */
+  max-width: 800px;                     /* Lebar maksimal */
+  margin: 20px auto;                    /* Tengah di layar */
+}
+
+/* Catatan (warna merah muda di bawah) */
+.note {
+  background-color: #fff2f2;            /* Latar merah muda lembut */
+  color: #b91c1c;                       /* Warna teks merah tua */
+  padding: 15px 25px;                   /* Ruang dalam */
+  border-left: 5px solid #ef4444;       /* Garis merah di sisi kiri */
+  border-radius: 6px;                   /* Sudut lembut */
+  max-width: 800px;                     /* Lebar maksimal */
+  margin: 20px auto;                    /* Tengah secara horizontal */
+}
+
+/* Footer (bagian bawah penulis) */
+.footer {
+  max-width: 800px;                     /* Batas lebar footer */
+  margin: 20px auto;                    /* Tengah di layar */
+  padding: 10px 25px;                   /* Ruang dalam */
+  display: flex;                        /* Membuat posisi kiri-kanan sejajar */
+  justify-content: space-between;       /* Spasi antar elemen di kanan & kiri */
+  align-items: center;                  /* Rata tengah secara vertikal */
+}
+.penulis {
+  font-weight: 500;                     /* Huruf agak tebal */
+}
+.signature {
+  color: #e53935;                       /* Warna merah khas tanda tangan */
+  font-size: 1.5rem;                    /* Ukuran huruf besar */
+  font-family: 'Brush Script MT', cursive; /* Font bergaya tulisan tangan */
+}
+

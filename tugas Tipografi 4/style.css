@@ -1,0 +1,133 @@
+/* untuk menyambungkan ke gogle font */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Import Google Fonts */              /* 👉 Mengambil font dari situs Google Fonts agar bisa digunakan di CSS */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font lokal */                      /* 👉 Menyambungkan font dari file lokal (.ttf) di folder /fonts */
+@font-face {
+  font-family: 'Script';              /* 👉 Nama font yang akan dipakai di CSS */
+  src: url('fonts/BismillahScript.ttf') format('truetype');  /* 👉 Lokasi file font lokal */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Halaman dasar */                   /* 👉 Mengatur tampilan umum seluruh halaman */
+body {
+  font-family: 'Poppins', sans-serif; /* 👉 Gunakan font Poppins untuk teks utama */
+  background-color: #f8fafc;          /* 👉 Warna latar belakang halaman (abu-abu muda) */
+  color: #333;                        /* 👉 Warna teks utama */
+  margin: 0;                          /* 👉 Hilangkan jarak luar (default margin browser) */
+  padding: 0;                         /* 👉 Hilangkan jarak dalam */
+  line-height: 1.7;                   /* 👉 Jarak antar baris agar teks nyaman dibaca */
+}
+
+/* Header */                          /* 👉 Mengatur bagian atas halaman (judul & subjudul) */
+header {
+  text-align: center;                 /* 👉 Posisikan teks di tengah */
+  padding: 40px 20px;                 /* 👉 Tambahkan jarak di dalam header */
+  background-color: #1e1b1b;          /* 👉 Latar belakang gelap */
+  color: #fff;                        /* 👉 Warna teks putih */
+  border-bottom: 5px solid #e78b00;   /* 👉 Garis bawah berwarna emas */
+}
+
+.judul-bismillah {
+  font-family: "BBH Sans Hegarty", sans-serif; /* 👉 Pakai font khusus dari Google untuk judul */
+  font-size: 3.5rem;                 /* 👉 Ukuran huruf besar */
+  color: #e78b00;                    /* 👉 Warna emas */
+  margin: 0;                         /* 👉 Hilangkan jarak luar */
+  letter-spacing: 1px;               /* 👉 Jarak antar huruf */
+}
+
+.judul-utama {
+  font-family: 'Poppins', sans-serif; /* 👉 Font modern untuk judul utama */
+  font-size: 2rem;                    /* 👉 Ukuran huruf sedang */
+  color: #f8fafc;                     /* 👉 Warna putih */
+  margin: 10px 0 0;
+  text-transform: uppercase;          /* 👉 Ubah huruf jadi kapital semua */
+  letter-spacing: 2px;                /* 👉 Tambahkan jarak antar huruf */
+}
+
+.subjudul {
+  color: #d1d5db;                     /* 👉 Warna abu muda */
+  font-style: italic;                 /* 👉 Tulisan miring */
+  margin-top: 10px;                   /* 👉 Tambahkan jarak atas */
+}
+
+/* Isi utama */                        /* 👉 Mengatur bagian konten utama halaman */
+main {
+  max-width: 800px;                   /* 👉 Lebar maksimum agar tidak terlalu lebar */
+  margin: 30px auto;                  /* 👉 Tengah halaman secara horizontal */
+  padding: 20px;                      /* 👉 Ruang dalam konten */
+  background: #fff;                   /* 👉 Warna putih untuk konten */
+  border-radius: 10px;                /* 👉 Sudut membulat */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05); /* 👉 Bayangan lembut */
+}
+
+.section-title {
+  font-family: "BBH Sans Hegarty", sans-serif; /* 👉 Font berbeda untuk judul bagian */
+  color: #006d5b;                   /* 👉 Warna hijau tua */
+  font-weight: 600;                 /* 👉 Ketebalan sedang */
+  font-size: 1.7rem;                /* 👉 Ukuran font besar */
+  margin-bottom: 16px;              /* 👉 Jarak bawah */
+}
+
+.highlight {
+  color: #e74c3c;                   /* 👉 Warna merah terang */
+  font-weight: 500;                 /* 👉 Huruf agak tebal */
+}
+
+/* Kutipan */                         /* 👉 Desain untuk blockquote (isi kutipan) */
+.kutipan {
+  background-color: #e5f0ff;        /* 👉 Latar biru muda */
+  color: #1e3a8a;                   /* 👉 Warna teks biru tua */
+  font-style: italic;               /* 👉 Teks miring */
+  padding: 20px 30px;               /* 👉 Ruang dalam */
+  border-left: 5px solid #2261ae;   /* 👉 Garis tebal di sisi kiri */
+  border-radius: 8px;               /* 👉 Sudut membulat */
+  margin: 30px 0;                   /* 👉 Jarak atas & bawah */
+}
+
+/* Catatan */                         /* 👉 Gaya khusus untuk kotak catatan */
+.note {
+  background-color: #fff2f2;        /* 👉 Latar merah muda */
+  color: #b91c1c;                   /* 👉 Warna teks merah tua */
+  padding: 15px 25px;               /* 👉 Ruang dalam */
+  border-left: 5px solid #ef4444;   /* 👉 Garis kiri merah */
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Footer */                          /* 👉 Bagian bawah halaman */
+footer {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  display: flex;                     /* 👉 Tampilkan dalam baris */
+  justify-content: space-between;    /* 👉 Jarak kiri–kanan otomatis */
+  align-items: center;               /* 👉 Rata tengah secara vertikal */
+}
+
+.penulis {
+  font-weight: 500;                  /* 👉 Huruf agak tebal */
+}
+
+/* Tanda tangan penulis */
+.signature {
+  font-family: "BBH Sans Hegarty", sans-serif; /* 👉 Font yang sama dengan judul */
+  font-size: 22px;                  /* 👉 Ukuran sedang */
+  color: #b91c1c;                   /* 👉 Warna merah tua */
+  margin: 0;
+}
+
+/* Gambar (misalnya logo atau foto) */
+img {
+  width: 3cm;                       /* 👉 Lebar 3 cm */
+  height: 30mm;                     /* 👉 Tinggi 30 mm */
+  padding-left: 900px;              /* 👉 Geser ke kanan (terlalu besar — bisa dikurangi nanti) */
+  background: none;                 /* 👉 Tanpa latar belakang */
+}
+
+

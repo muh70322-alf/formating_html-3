@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solusi Tugas CSS Komponen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Solusi Tugas CSS Komponen</h1>
+
+    <!-- 1. Alert -->
+    <section class="card">
+      <h2>1. Dismissible Alert (Positioning)</h2>
+      <div class="alert">
+        <strong>Informasi Penting:</strong> Ini adalah contoh notifikasi sukses. Klik 'X' untuk menutup.
+        <button class="close-btn">×</button>
+      </div>
+    </section>
+
+    <!-- 2. Profile Card -->
+    <section class="card">
+      <h2>2. Profile Card dengan Status Badge</h2>
+      <div class="profile-card">
+        <div class="avatar">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Foto Profil">
+          <span class="status"></span>
+        </div>
+        <h3>Rina Kusuma</h3>
+        <p>UI/UX Designer</p>
+      </div>
+    </section>
+
+    <!-- 3. Pricing Cards -->
+    <section class="card">
+      <h2>3. Responsive Pricing Cards (Flexbox)</h2>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h3 class="basic">Paket Dasar</h3>
+          <p class="price">$15</p>
+          <p>5 Pengguna</p>
+          <p>2 GB Penyimpanan</p>
+          <p>Dukungan Email</p>
+          <button class="btn-basic">Pilih Dasar</button>
+        </div>
+
+        <div class="pricing-card highlight">
+          <h3 class="pro">Paket PRO</h3>
+          <p class="price price-pro">$49</p>
+          <p><b>20 Pengguna</b></p>
+          <p><b>10 GB Penyimpanan</b></p>
+          <p>Dukungan Prioritas</p>
+          <button class="btn-pro">Beli PRO</button>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="business">Paket Bisnis</h3>
+          <p class="price">$99</p>
+          <p>Tidak Terbatas</p>
+          <p>50 GB Penyimpanan</p>
+          <p>Dukungan 24/7</p>
+          <button class="btn-business">Hubungi Kami</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Tombol untuk menutup alert
+    document.querySelector('.close-btn').addEventListener('click', function() {
+      this.parentElement.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>

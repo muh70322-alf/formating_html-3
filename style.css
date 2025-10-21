@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Font Digital;
+    src: url(fonts\digital-7.ttf);
+}
+.digital {
+    font-family: "Font Digital";
+}
+
+
+
+.text-tengah {
+    text-align: center;
+}
+.text-kiri {
+    text-align: left;
+}
+.text-kanan {
+    text-align: right;
+}
+.text-rata {
+    text-align: justify;
+}
+.menyala {
+    /* ukuran font */
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+.gelap {
+    color: darkblue;
+    /* ketebalan font */
+    font-weight: bold;
+}
+
+.button-save {
+    text-decoration: none;
+    background: darkblue;
+    color: white;
+    padding: 6px 10px;
+}
+.coret {
+    text-decoration: line-through;
+}
+
+.text-rendah {
+    line-height: 0.8;
+    background-color: yellow;
+    padding: 4px;
+}
+.text-tinggi {
+    line-height: 1.5;
+    background-color: greenyellow;
+    padding: 4px;
+}
+/* atur jarak antar huruf */
+.text-rapat {
+    letter-spacing: -2px;
+    background-color: orange;
+    padding: 4px;
+}
+.text-longgar {
+    letter-spacing: 4px;
+    background-color: pink;
+    padding: 4px;
+}
+.text-selaw{
+    letter-spacing: 4px;
+    background-color: pink;
+    padding: 4px;
+}
+.text- {
+    letter-spacing: 4px;
+    background-color: pink;
+    padding: 4px;
+}
