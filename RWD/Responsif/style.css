@@ -1,0 +1,41 @@
+header {
+    background: rgb(30, 210, 177); /* Warna block paling atas */
+    text-align: center;
+}
+
+nav {
+    background: rgb(13, 176, 176);/*warna  belakang box dari (link)*/
+    text-align: center;/*Rata tengah*/
+    display: flex;/**/
+    align-items: center;/**/
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav ul {
+    gap: 14px; /* untuk jarak LInk*/
+}
+
+nav li a {
+    color: aliceblue;/* warna tulisan link*/
+    background: rgb(74, 185, 198);/* warna box kotak bagian link*/
+}
+
+/* media query = atur css di ukuran layar
+1024px  "deskop/leptop"*/
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  header {
+    background-color: gold;
+  }
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  header {
+    background-color: tomato;
+  }
+}

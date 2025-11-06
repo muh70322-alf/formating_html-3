@@ -1,157 +1,156 @@
 /* Reset dasar */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f8fafc;
-  margin: 0;
-  padding: 20px;
-  color: #1e293b;
+  font-family: 'Inter', sans-serif; /* Mengatur font utama halaman menjadi 'Inter' */
+  background-color: #f8fafc;        /* Warna latar belakang halaman */
+  margin: 0;                        /* Menghapus jarak luar default body */
+  padding: 20px;                    /* Memberi jarak dalam agar isi tidak menempel tepi layar */
+  color: #1e293b;                   /* Warna teks utama */
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px;                 /* Lebar maksimal kontainer 900px */
+  margin: 0 auto;                   /* Membuat kontainer berada di tengah halaman */
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: center;               /* Judul di tengah halaman */
+  margin-bottom: 30px;              /* Jarak bawah 30px */
 }
 
 /* Section/card container */
 .card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  background: #fff;                 /* Latar putih untuk setiap card */
+  padding: 20px;                    /* Jarak dalam isi card */
+  border-radius: 10px;              /* Sudut card dibuat melengkung */
+  margin-bottom: 30px;              /* Jarak antar card */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Bayangan lembut di bawah card */
 }
 
 /* 1. Alert box */
 .alert {
-  position: relative;
-  background-color: #d1e7dd;
-  border: 1px solid #badbcc;
-  color: #0f5132;
-  padding: 12px 16px;
-  border-radius: 6px;
+  position: relative;               /* Agar tombol X bisa diposisikan di dalam alert */
+  background-color: #d1e7dd;        /* Warna latar hijau muda (sukses) */
+  border: 1px solid #badbcc;        /* Warna garis pinggir */
+  color: #0f5132;                   /* Warna teks hijau tua */
+  padding: 12px 16px;               /* Jarak isi alert */
+  border-radius: 6px;               /* Sudut membulat */
 }
 
 .alert .close-btn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: #0f5132;
+  position: absolute;               /* Posisi absolut terhadap alert */
+  top: 8px;                         /* Jarak dari atas */
+  right: 10px;                      /* Jarak dari kanan */
+  background: none;                 /* Tidak ada latar tombol */
+  border: none;                     /* Menghapus garis tepi */
+  font-size: 18px;                  /* Ukuran teks tombol */
+  cursor: pointer;                  /* Menunjukkan bahwa bisa diklik */
+  color: #0f5132;                   /* Warna teks X */
 }
 
 /* 2. Profile card */
 .profile-card {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-  display: inline-block;
-  padding: 20px;
+  text-align: center;               /* Isi teks di tengah */
+  background-color: #fff;           /* Latar putih */
+  border-radius: 12px;              /* Sudut membulat */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Bayangan lembut */
+  display: inline-block;            /* Agar ukurannya sesuai isi */
+  padding: 20px;                    /* Jarak dalam */
 }
 
 .avatar {
-  position: relative;
-  display: inline-block;
+  position: relative;               /* Agar status bisa ditempatkan di pojok bawah */
+  display: inline-block;            /* Supaya elemen img dan status tetap sebaris */
 }
 
 .avatar img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 100px;                     /* Lebar foto profil */
+  height: 100px;                    /* Tinggi foto profil */
+  border-radius: 50%;               /* Membuat foto menjadi bulat */
+  object-fit: cover;                /* Menjaga proporsi gambar dalam bentuk bulat */
 }
 
 .status {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 15px;
+  position: absolute;               /* Ditempatkan bebas di dalam .avatar */
+  bottom: 8px;                      /* Jarak dari bawah */
+  right: 8px;                       /* Jarak dari kanan */
+  width: 15px;                      /* Ukuran lingkaran status */
   height: 15px;
-  background-color: #22c55e;
-  border: 2px solid #fff;
-  border-radius: 50%;
+  background-color: #22c55e;        /* Warna hijau (status online) */
+  border: 2px solid #fff;           /* Garis putih di sekeliling status */
+  border-radius: 50%;               /* Membuat status berbentuk bulat */
 }
 
 /* 3. Pricing Cards */
 .pricing-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: flex;                    /* Menggunakan flexbox untuk menata kartu sejajar */
+  flex-wrap: wrap;                  /* Agar baris baru otomatis jika layar kecil */
+  gap: 20px;                        /* Jarak antar kartu */
+  justify-content: center;          /* Rata tengah secara horizontal */
 }
 
 .pricing-card {
-  flex: 1 1 250px;
-  background-color: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  text-align: center;
-  padding: 20px;
-  transition: 0.3s;
+  flex: 1 1 250px;                  /* Ukuran fleksibel minimum 250px */
+  background-color: #fff;           /* Latar putih */
+  border: 1px solid #e5e7eb;        /* Garis pinggir abu muda */
+  border-radius: 12px;              /* Sudut membulat */
+  text-align: center;               /* Isi teks di tengah */
+  padding: 20px;                    /* Jarak dalam */
+  transition: 0.3s;                 /* Efek transisi saat hover */
 }
 
 .pricing-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transform: translateY(-3px);      /* Sedikit naik saat di-hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Menambah bayangan */
 }
 
 .pricing-card.highlight {
-  border: 2px solid #f87171;
+  border: 2px solid #f87171;        /* Garis merah untuk menonjolkan paket tertentu */
 }
 
 .pricing-card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 10px;              /* Jarak bawah judul paket */
 }
 
 .price {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 10px 0;
+  font-size: 2rem;                  /* Ukuran huruf besar untuk harga */
+  font-weight: 700;                 /* Huruf tebal */
+  margin: 10px 0;                   /* Jarak atas dan bawah */
 }
 
 .price-pro {
-  color: #ef4444;
+  color: #ef4444;                   /* Warna merah khusus harga PRO */
 }
 
 /* Tombol warna berbeda */
 button {
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  color: white;
+  border: none;                     /* Menghapus garis tepi default */
+  padding: 10px 16px;               /* Ukuran tombol */
+  border-radius: 6px;               /* Sudut membulat */
+  cursor: pointer;                  /* Menunjukkan bisa diklik */
+  font-weight: 600;                 /* Huruf agak tebal */
+  color: white;                     /* Warna teks putih */
 }
 
 .btn-basic {
-  background-color: #3b82f6;
+  background-color: #caf62c;        /* Warna hijau muda untuk tombol dasar */
 }
 
 .btn-pro {
-  background-color: #ef4444;
+  background-color: #d12d2d;        /* Warna merah untuk tombol PRO */
 }
 
 .btn-business {
-  background-color: #10b981;
+  background-color: #00ffaa;        /* Warna biru muda/hijau neon untuk tombol bisnis */
 }
 
 button:hover {
-  opacity: 0.9;
+  opacity: 0.9;                     /* Saat hover tombol sedikit gelap (efek interaktif) */
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsive : ukuran di tampilan elektronik*/
+@media (max-width: 768px) {         /* Jika lebar layar di bawah 768px (tablet/HP) */
   .pricing-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;         /* Kartu ditampilkan ke bawah (vertikal) */
+    align-items: center;            /* Semua kartu di tengah */
   }
 }
-

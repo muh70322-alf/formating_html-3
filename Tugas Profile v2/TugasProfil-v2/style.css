@@ -1,0 +1,562 @@
+/* ===================================================
+   🌐 RESET & VARIABEL
+=================================================== */
+* {                         /* Menghapus margin & padding default semua elemen */
+  box-sizing: border-box;   /* Hitung padding & border di dalam total width */
+  margin: 0;                /* Hilangkan margin bawaan */
+  padding: 0;               /* Hilangkan padding bawaan */
+}
+
+:root {                     /* Menyimpan variabel warna untuk dipakai di seluruh file */
+  --bg: #f7f9fb;            /* Warna latar belakang utama */
+  --ink: #1f2937;           /* Warna teks utama */
+  --muted: #6b7280;         /* Warna teks sekunder */
+  --brand: #1e3a8a;         /* Warna utama (biru tua) */
+  --brand-light: #3b82f6;   /* Warna hover biru terang */
+  --accent: #facc15;        /* Warna aksen (kuning) */
+  --box: #ffffff;           /* Warna background box putih */
+  --border: #e5e7eb;        /* Warna garis border abu muda */
+}
+
+/* ===================================================
+   🧱 DASAR HALAMAN
+=================================================== */
+body {
+  font-family: 'Poppins', sans-serif; /* Font utama */
+  background: var(--bg);              /* Warna latar belakang dari variabel */
+  color: var(--ink);                  /* Warna teks utama */
+  line-height: 1.6;                   /* Jarak antar baris teks */
+  padding: 10px;                      /* Ruang tepi halaman */
+}
+
+/* ===================================================
+   🏫 HEADER
+=================================================== */
+.container {              /* Bungkus utama header */
+  text-align: center;     /* Rata tengah semua isi */
+  padding: 20px;          /* Jarak isi dari tepi container */
+}
+
+.logo {                   /* Logo sekolah */
+  width: 100px;           /* Ukuran lebar logo */
+  border-radius: 10px;    /* Sudut logo membulat */
+  margin-bottom: 10px;    /* Jarak bawah logo */
+}
+
+.title {                  /* Judul besar halaman */
+  color: var(--brand);    /* Warna biru utama */
+  font-size: 1.8rem;      /* Ukuran teks besar */
+  font-weight: 700;       /* Tebal */
+}
+
+h5 {                      /* Subjudul */
+  color: var(--muted);    /* Warna abu lembut */
+  font-weight: 500;       /* Ketebalan sedang */
+  margin-top: 5px;        /* Jarak atas sedikit */
+}
+
+hr {                      /* Garis pemisah antar bagian */
+  border: none;
+  border-top: 1px solid var(--border); /* Garis tipis abu muda */
+  margin: 15px auto;
+  width: 90%;
+}
+
+/* ===================================================
+   🧭 NAVBAR FLEXBOX
+=================================================== */
+.topnav {
+  display: flex;              /* Gunakan flexbox */
+  flex-wrap: wrap;            /* Boleh turun ke baris baru jika sempit */
+  justify-content: center;    /* Rata tengah isi menu */
+  gap: 8px;                   /* Jarak antar tombol menu */
+  background: #f3f4f6;        /* Warna latar belakang navbar */
+  border-radius: 20px;        /* Sudut membulat */
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 900px;           /* Batas lebar maksimum navbar */
+}
+
+.topnav a {                   /* Link menu */
+  text-decoration: none;      /* Hilangkan garis bawah */
+  color: var(--ink);          /* Warna teks */
+  padding: 8px 16px;          /* Ruang di dalam tombol */
+  border-radius: 25px;        /* Sudut tombol membulat */
+  transition: all 0.3s;       /* Efek transisi halus saat hover */
+  background: var(--box);     /* Warna dasar tombol putih */
+  border: 1px solid var(--border); /* Garis tepi tipis */
+}
+
+.topnav a:hover {             /* Saat kursor di atas menu */
+  background: var(--brand-light);
+  color: #fff;                /* Teks jadi putih */
+}
+
+.topnav a.active {            /* Menu yang sedang aktif */
+  background: var(--brand);
+  color: #fff;
+}
+
+/* Tombol hamburger (menu ikon di mobile) */
+.topnav .icon {
+  display: none;              /* Disembunyikan di desktop */
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ===================================================
+   📦 BOX UMUM
+=================================================== */
+.box, .card, .table-card {
+  background: var(--box);                     /* Warna latar putih */
+  border: 1px solid var(--border);            /* Garis abu muda */
+  border-radius: 12px;                        /* Sudut lembut */
+  padding: 20px;                              /* Isi dalam */
+  margin: 20px auto;                          /* Tengah di halaman */
+  max-width: 1000px;                          /* Batas lebar */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);    /* Bayangan lembut */
+}
+
+.section-title, .judul-section {              /* Judul bagian dalam box */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brand);
+  border-left: 5px solid var(--accent);       /* Garis kuning di kiri judul */
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===================================================
+   🖼️ GALERI (Flexbox/Grid)
+=================================================== */
+.gallery-flex {
+  display: flex;              /* Atur layout galeri dengan flexbox */
+  flex-wrap: wrap;            /* Boleh baris baru jika penuh */
+  gap: 15px;                  /* Jarak antar gambar */
+  justify-content: center;    /* Rata tengah */
+}
+
+.gallery-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s; /* Efek saat hover */
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px); /* Naik sedikit saat disorot */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;          /* Jaga rasio gambar tetap proporsional */
+}
+
+.gallery-caption {
+  padding: 8px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ===================================================
+   🎥 VIDEO RESPONSIF
+=================================================== */
+.video-responsive {
+  position: relative;
+  padding-top: 56.25%;        /* Rasio 16:9 */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;                /* Lebar penuh */
+  height: 100%;               /* Tinggi otomatis */
+  border: 0;
+}
+
+/* ===================================================
+   👤 FOTO PROFIL (Biodata)
+=================================================== */
+.foto-lingkaran {
+  width: 160px;               /* Lebar foto */
+  height: 160px;
+  border-radius: 50%;         /* Membuat foto berbentuk lingkaran */
+  object-fit: cover;          /* Isi lingkaran penuh tanpa distorsi */
+  display: block;
+  margin: 10px auto;
+  border: 3px solid var(--accent); /* Bingkai kuning */
+}
+
+/* ===================================================
+   👤 FOTO PROFIL RATA KIRI
+=================================================== */
+.foto-lingkaran {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;           /* Bentuk bulat */
+  object-fit: cover;
+  float: left;                  /* 🔹 Posisikan di kiri */
+  margin: 0 20px 10px 0;        /* 🔹 Jarak kanan 20px agar teks tidak menempel */
+  border: 3px solid var(--accent);
+}
+
+
+
+/* ===================================================
+   🧾 FORM (Feedback)
+=================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fb;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.title {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h5 {
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 18px;
+  margin: 24px auto;
+  max-width: 550px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.judul-section {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  border-left: 5px solid #facc15;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-feedback input,
+.form-feedback select,
+.form-feedback textarea {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.form-feedback textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #3b82f6;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 4px 0 8px 0;
+}
+.radio-group label,
+.checkbox-group label {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #1e3a8a;
+  transform: scale(1.15);
+  margin-right: 4px;
+}
+
+/* Navbar gaya umum (bisa digunakan di .nav atau .topnav) */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 8px 10px;
+  margin: 10px auto 8px auto;
+  max-width: 900px;
+}
+.nav a {
+  text-decoration: none;
+  color: #1f2937;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+.nav a:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+.nav a.active {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .card, .container { max-width: 99vw; padding-left: 1vw; padding-right: 1vw;}
+  .radio-group, .checkbox-group { flex-direction: column; gap: 3px;}
+}
+
+/* ===================================================
+   📅 TABEL (Jadwal)
+=================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg: #f7f9fb;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --brand: #1e3a8a;
+  --brand-light: #3b82f6;
+  --accent: #9e41eb;
+  --box: #ffffff;
+  --border: #e5e7eb;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+.title {
+  color: var(--brand);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h5 {
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 5px;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 15px auto;
+  width: 90%;
+}
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 900px;
+}
+.topnav a {
+  text-decoration: none;
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  background: var(--box);
+  border: 1px solid var(--border);
+}
+.topnav a:hover {
+  background: var(--brand-light);
+  color: #fff;
+}
+.topnav a.active {
+  background: var(--brand);
+  color: #fff;
+}
+.topnav .icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {display: block;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon { position: absolute; right: 0; top: 0; }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+.box, .card, .table-card {
+  background: var(--box);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.section-title, .table-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brand);
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.table-card {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: center;
+}
+thead {
+  background: var(--brand);
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background: #f8fafc;
+}
+tbody tr:hover {
+  background: #e0e7ef;
+}
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.98rem;
+  padding: 16px 0 5px 0;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  .table-card, .box, .card {
+    padding: 6vw 2vw;
+    margin: 10px auto;
+    max-width: 99vw;
+    background-color: #4fece7;
+  }
+  th, td {
+    padding: 6px 2px;
+    font-size: 0.98rem;
+  }
+}
+
+/* ===================================================
+   📱 MEDIA QUERY (Mobile First)
+=================================================== */
+
+/* 📲 Tablet (600–1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .topnav { gap: 12px; }                            /* Menu lebih renggang */
+  .gallery-flex { justify-content: space-around; }  /* Gambar agak tersebar */
+  .gallery-item { flex: 0 1 calc(50% - 20px); }     /* 2 kolom */
+  .form-feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;                 /* Form 2 kolom */
+    gap: 12px;
+  }
+  .form-feedback textarea {
+    grid-column: span 2;                            /* Textarea melebar penuh */
+  }
+}
+
+/* 💻 Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .gallery-item { flex: 0 1 calc(25% - 15px); }     /* 4 kolom di desktop */
+  .topnav { max-width: 1000px; }
+}
+
+/* ===================================================
+   🍔 MENU HAMBURGER RESPONSIVE (Mobile)
+=================================================== */
+@media (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}      /* Sembunyikan menu lain */
+  .topnav a.icon {display: block;}                  /* Tampilkan ikon ☰ */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon { position: absolute; right: 0; top: 0; }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+} 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Umpan Balik</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+
+  <!-- Judul -->
+  <div class="container">
+    <h1 class="title">Folmulir Umpan Balik</h1>
+    <h5>Kritik,Saran, dan Masukan</h5>
+    <header>
+      
+      <!-- Navigasi -->
+  <div class="topnav" id="myTopnav"> <!-- Navbar -->
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html" class="active">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>   
+
+  <hr>
+
+  <!-- Formulir -->
+  <div class="card">
+    <h3 class="judul-section">🧾 Formulir Kontak & Saran</h3>
+    <p>Berikan masukan terbaik Anda untuk pengembangan website ini. Semua input wajib kecuali nama.</p>
+
+    <form action="#" method="post" class="form-feedback">
+
+      <!-- Nama -->
+      <label for="nama">Nama Anda (Opsional):</label>
+      <input type="text" id="nama" name="nama" placeholder="Tulis nama Anda">
+
+      <!-- Email -->
+      <label for="email">Email Anda:</label>
+      <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+
+      <!-- Rating -->
+      <label for="rating">Rating Kepuasan Website (Skala 1-10):</label>
+      <input type="number" id="rating" name="rating" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required>
+
+      <!-- Rekomendasi -->
+      <label>Rekomendasi Website Ini?</label>
+      <div class="radio-group">
+        <input type="radio" id="ya" name="rekomendasi" value="Ya" required>
+        <label for="ya">Ya, Sangat</label>
+
+        <input type="radio" id="mungkin" name="rekomendasi" value="Mungkin">
+        <label for="mungkin">Mungkin Saja</label>
+
+        <input type="radio" id="tidak" name="rekomendasi" value="Tidak">
+        <label for="tidak">Tidak</label>
+      </div>
+
+      <!-- Topik -->
+      <label>Topik yang paling menarik:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="biodata" name="topik" value="Biodata">
+        <label for="biodata">Biodata</label>
+
+        <input type="checkbox" id="jadwal" name="topik" value="Jadwal">
+        <label for="jadwal">Jadwal</label>
+
+        <input type="checkbox" id="galeri" name="topik" value="Galeri">
+        <label for="galeri">Galeri</label>
+      </div>
+
+      <!-- Pilih Bidang -->
+      <label for="bidang">Saran Pengembangan di Bidang:</label>
+      <select id="bidang" name="bidang">
+        <option value="">-- Pilih Bidang --</option>
+        <option value="desain">Desain</option>
+        <option value="konten">Konten</option>
+        <option value="fitur">Fitur</option>
+      </select>
+
+      <!-- Pesan -->
+      <label for="pesan">Pesan/Saran Lengkap:</label>
+      <textarea id="pesan" name="pesan" placeholder="Tulis pesan dan saran secara detail Disini ..."></textarea>
+
+      <!-- Tombol -->
+      <div class="form-buttons">
+        <button type="reset" class="btn-secondary">Atur Ulang</button>
+        <button type="submit" class="btn-primary">Kirim Feedback</button>
+      </div>
+    </form>
+  </div>
+
+<!-- ================= FOOTER ================= -->
+  <footer style="text-align:center; padding:20px; color:var(--muted); font-size:0.9rem;">
+   © 2025 HSI Boarding School | Santri Web Development Class
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    // Fungsi untuk navbar responsif (mobile menu)
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") x.className += " responsive";
+      else x.className = "topnav";
+    }
+  </script>
+</body>
+</html>

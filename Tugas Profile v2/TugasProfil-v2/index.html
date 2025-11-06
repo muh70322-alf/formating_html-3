@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Menandakan dokumen ini adalah HTML5 -->
+<html lang="id"> <!-- Bahasa halaman = Indonesia -->
+<head>
+  <meta charset="UTF-8"> <!-- Mengatur agar teks tampil dengan benar (UTF-8) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Agar tampilan menyesuaikan layar -->
+  <title>HSI Boarding School</title> <!-- Judul di tab browser -->
+  <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Ikon font -->
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <div class="container">
+    <img src="C:\Users\User\OneDrive\Documents\html-css-\TugasProfil-v2\images\logo (1).webp" alt="Logo HSI" class="logo"> <!-- Logo sekolah -->
+    <h1 class="title">HSI Boarding School Purworejo</h1>
+    <h5>Website Sederhana Kelas X</h5>
+  </div>
+
+  <hr> <!-- Garis pemisah -->
+
+  <!-- ================= NAVBAR ================= -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <hr>
+
+  <!-- ================= ISI KONTEN ================= -->
+  <div class="box">
+    <h2 class="section-title">Pengantar</h2>
+    <p>
+      Selamat datang di website profil sederhana saya. Situs ini berisi biodata, hobi, dan cita-cita saya
+      sebagai siswa HSI Boarding School Purworejo. Silakan jelajahi halaman biodata untuk mengenal saya lebih dekat.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3 class="section-title">Avatar Favorit</h3>
+    <p>Berikut ini avatar dari internet yang menggambarkan minat saya.</p>
+
+    <img src="C:\Users\User\OneDrive\Documents\html-css-\TugasProfil-v2\images\mesin.jpeg"
+         alt="Avatar Hacker alt="
+         style="display:block; margin:left; width: 150px; border-radius:10px; box-shadow:0 5px 10px rgba(3, 254, 154, 0.15);">
+
+    <p style="margin-top:10px;">
+      Saya memiliki minat besar pada <b>bidang Teknik Mesin</b>, 
+    karena dari sana saya belajar memahami bagaimana sesuatu bisa 
+    <i>bergerak</i>, <i>bekerja</i>, dan <i>bermanfaat</i> bagi manusia.<br><br>
+    
+    Setiap roda yang berputar, setiap mesin yang berfungsi, 
+    mengingatkan saya pada <b>kebesaran Allah ﷻ</b> 
+    dalam menciptakan <i>keteraturan</i> dan <i>keseimbangan</i> di alam semesta.<br><br>
+    
+    Bagi saya, menjadi seorang <b>teknisi</b> bukan hanya tentang menguasai 
+    <b>alat dan teknologi</b>, tetapi juga tentang 
+    <i>mengamalkan ilmu dengan niat ibadah</i> 
+    dan memberikan <b>manfaat bagi umat</b>
+    </p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="text-align:center; padding:20px; color:var(--muted); font-size:0.9rem;">
+    2025 HSI Boarding School | Santri Web Development Class
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    // Fungsi untuk navbar responsif (mobile menu)
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") x.className += " responsive";
+      else x.className = "topnav";
+    }
+  </script>
+</body>
+</html>

@@ -1,77 +1,80 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html> <!-- Menentukan bahwa dokumen ini adalah dokumen HTML5 -->
+<html lang="id"> <!-- Bahasa halaman diatur ke Bahasa Indonesia -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solusi Tugas CSS Komponen</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" /> <!-- Mengatur karakter agar teks tampil dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Agar tampilan responsif di perangkat mobile -->
+  <title>Solusi Tugas CSS Komponen</title> <!-- Judul halaman yang muncul di tab browser -->
+  <link rel="stylesheet" href="style.css" /> <!-- Menghubungkan file CSS eksternal -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" /> <!-- Mengambil font “Inter” dari Google Fonts -->
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Solusi Tugas CSS Komponen</h1>
+  <div class="container"> <!-- Pembungkus utama semua isi halaman -->
+    <h1>Solusi Tugas CSS Komponen</h1> <!-- Judul utama halaman -->
 
     <!-- 1. Alert -->
-    <section class="card">
-      <h2>1. Dismissible Alert (Positioning)</h2>
-      <div class="alert">
+    <section class="card"> <!-- Bagian pertama: card untuk alert -->
+      <h2>1. Dismissible Alert (Positioning)</h2> <!-- Subjudul bagian alert -->
+      <div class="alert"> <!-- Kotak notifikasi (alert box) -->
         <strong>Informasi Penting:</strong> Ini adalah contoh notifikasi sukses. Klik 'X' untuk menutup.
-        <button class="close-btn">×</button>
+        <button class="close-btn">×</button> <!-- Tombol “X” untuk menutup alert -->
       </div>
     </section>
 
     <!-- 2. Profile Card -->
-    <section class="card">
-      <h2>2. Profile Card dengan Status Badge</h2>
-      <div class="profile-card">
-        <div class="avatar">
-          <img src="https://i.pravatar.cc/150?img=5" alt="Foto Profil">
-          <span class="status"></span>
+    <section class="card"> <!-- Bagian kedua: kartu profil -->
+      <h2>2. Profile Card dengan Status Badge</h2> <!-- Subjudul bagian profil -->
+      <div class="profile-card"> <!-- Pembungkus kartu profil -->
+        <div class="avatar"> <!-- Bagian foto profil -->
+          <img src="gambar/36.jpg" alt="Profil Saya"> <!-- Foto profil -->
+          <span class="status"></span> <!-- Titik kecil untuk menandakan status (online/offline) -->
         </div>
-        <h3>Rina Kusuma</h3>
-        <p>UI/UX Designer</p>
+        <h3>Muhammad Irkham Fajri</h3> <!-- Nama pengguna -->
+        <p>Pelajar</p> <!-- Jabatan pengguna -->
       </div>
     </section>
 
     <!-- 3. Pricing Cards -->
-    <section class="card">
-      <h2>3. Responsive Pricing Cards (Flexbox)</h2>
-      <div class="pricing-container">
-        <div class="pricing-card">
-          <h3 class="basic">Paket Dasar</h3>
-          <p class="price">$15</p>
-          <p>5 Pengguna</p>
-          <p>2 GB Penyimpanan</p>
-          <p>Dukungan Email</p>
-          <button class="btn-basic">Pilih Dasar</button>
+    <section class="card"> <!-- Bagian ketiga: kartu harga (pricing cards) -->
+      <h2>3. Responsive Pricing Cards (Flexbox)</h2> <!-- Subjudul bagian pricing -->
+      <div class="pricing-container"> <!-- Pembungkus semua kartu harga -->
+
+        <div class="pricing-card"> <!-- Kartu harga pertama -->
+          <h3 class="basic">Paket Dasar</h3> <!-- Nama paket -->
+          <p class="price">$15</p> <!-- Harga -->
+          <p>5 Pengguna</p> <!-- Fitur 1 -->
+          <p>2 GB Penyimpanan</p> <!-- Fitur 2 -->
+          <p>Dukungan Email</p> <!-- Fitur 3 -->
+          <button class="btn-basic">Pilih Dasar</button> <!-- Tombol aksi -->
         </div>
 
-        <div class="pricing-card highlight">
-          <h3 class="pro">Paket PRO</h3>
-          <p class="price price-pro">$49</p>
-          <p><b>20 Pengguna</b></p>
-          <p><b>10 GB Penyimpanan</b></p>
-          <p>Dukungan Prioritas</p>
-          <button class="btn-pro">Beli PRO</button>
+        <div class="pricing-card"> <!-- Kartu harga kedua -->
+          <h3 class="business">Paket Bisnis</h3> <!-- Nama paket -->
+          <p class="price">$99</p> <!-- Harga -->
+          <p>Tidak Terbatas</p> <!-- Fitur 1 -->
+          <p>50 GB Penyimpanan</p> <!-- Fitur 2 -->
+          <p>Dukungan 24/7</p> <!-- Fitur 3 -->
+          <button class="btn-business">Hubungi Kami</button> <!-- Tombol aksi -->
         </div>
 
-        <div class="pricing-card">
-          <h3 class="business">Paket Bisnis</h3>
-          <p class="price">$99</p>
-          <p>Tidak Terbatas</p>
-          <p>50 GB Penyimpanan</p>
-          <p>Dukungan 24/7</p>
-          <button class="btn-business">Hubungi Kami</button>
+        <div class="pricing-card highlight"> <!-- Kartu harga ketiga (disorot) -->
+          <h3 class="pro">Paket PRO</h3> <!-- Nama paket -->
+          <p class="price price-pro">$49</p> <!-- Harga PRO -->
+          <p><b>20 Pengguna</b></p> <!-- Fitur 1 -->
+          <p><b>10 GB Penyimpanan</b></p> <!-- Fitur 2 -->
+          <p>Dukungan Prioritas</p> <!-- Fitur 3 -->
+          <button class="btn-pro">Beli PRO</button> <!-- Tombol aksi -->
         </div>
-      </div>
+
+      </div> <!-- Tutup pricing-container -->
     </section>
-  </div>
+  </div> <!-- Tutup container -->
 
   <script>
-    // Tombol untuk menutup alert
+    // Script untuk menutup alert ketika tombol X diklik
     document.querySelector('.close-btn').addEventListener('click', function() {
-      this.parentElement.style.display = 'none';
+      this.parentElement.style.display = 'none'; // Sembunyikan elemen induk (alert)
     });
   </script>
 

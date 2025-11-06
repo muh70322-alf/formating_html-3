@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Karya Santri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Galeri Karya Santri</h1> <!-- Judul halaman -->
+    <h5>Karya Pertama Website Profil Pribadi</h5>
+  </div>
+
+  <hr>
+
+  <div class="topnav" id="myTopnav"> <!-- Navbar -->
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html" class="active">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <hr>
+
+  <section class="box"> <!-- Bagian galeri gambar -->
+    <h3 class="section-title">Karya Desain</h3>
+    <div class="gallery-flex"> <!-- Wadah gambar (flexbox) -->
+      <div class="gallery-item">
+        <img src="C:\Users\User\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\6325769799857802024_121.jpg" alt="Foto 1"> <!-- Gambar 1 -->
+        <p class="gallery-caption">Skena</p>
+      </div>
+      <div class="gallery-item">
+        <img src="C:\Users\User\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\6329998611772542178_121.jpg" alt="Foto 2"> <!-- Gambar 2 -->
+        <p class="gallery-caption">Foto Setiap hari Jum'at</p>
+      </div>
+      <div class="gallery-item">
+        <img src="C:\Users\User\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\6052981656496311190_121.jpg" alt="Foto 3"> <!-- Gambar 3 -->
+        <p class="gallery-caption">Kunjungan Ke Panti Asuhan Muhammadiyah</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="box"> <!-- Bagian video -->
+    <h3 class="section-title">Karya Video</h3>
+    <div class="video-responsive"> <!-- Video responsif -->
+      <iframe src="C:\Users\User\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\6325769799397808233.mp4" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>© 2025 HSI Boarding School | Santri Web Development Class</footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") x.className += " responsive";
+      else x.className = "topnav";
+    }
+  </script>
+</body>
+</html>

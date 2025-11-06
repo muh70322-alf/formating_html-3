@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Harian Santri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Jadwal Harian Santri</h1>
+    <h5>Materi HTML & CSS</h5>
+  </div>
+  <hr>
+
+  <!-- Navbar konsisten dan responsif -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html" class="active">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="table-card">
+    <div class="table-title">Jadwal Kegiatan Belajar</div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Waktu</th>
+          <th>Hari</th>
+          <th>Kegiatan</th>
+        </tr>
+        <tr>
+          <th>Mulai</th>
+          <th>Selesai</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>08:00</td>
+          <td>10:00</td>
+          <td>Senin</td>
+          <td>Pelajaran Web Dasar (Teori HTML)</td>
+        </tr>
+        <tr>
+          <td>10:00</td>
+          <td>10:30</td>
+          <td></td>
+          <td>ISTIRAHAT (Snack & Shalat Dhuha)</td>
+        </tr>
+        <tr>
+          <td>10:30</td>
+          <td>12:00</td>
+          <td>Senin</td>
+          <td>Latihan Praktikum HTML Table</td>
+        </tr>
+        <tr>
+          <td>14:00</td>
+          <td>16:00</td>
+          <td>Selasa</td>
+          <td>Pelajaran Web Dasar (Teori CSS & Box Model)</td>
+        </tr>
+        <tr>
+          <td>16:00</td>
+          <td>16:45</td>
+          <td>Selasa</td>
+          <td>Olahraga (Renang)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>© 2025 HSI Boarding School | Santri Web Development Class</footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") x.className += " responsive";
+      else x.className = "topnav";
+    }
+  </script>
+</body>
+</html>
